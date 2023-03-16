@@ -19,5 +19,5 @@ jobs:
        sudo systemctl daemon-reload #THIS IS RESCUE COMMAND…
        sudo systemctl restart docker
        sudo systemctl status docker
-       echo "$Sasi@@@@1" | docker login --username foo --password-stdin http://192.168.1.4:8081/repository/test-repo/
+       echo "$Sasi@@@@1" | docker login --username foo --password-stdin http://localhost:8081/
        docker push http://192.168.1.4:8081/repository/test-repo/test1:test1
