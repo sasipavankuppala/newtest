@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build & Push Image
       run: |
-       docker build -f Dockerfile -t test:test
-        docker tag http://localhost:8081/repository/test-repo//test:test
+       docker build -f Dockerfile -t test:test1
+        docker tag http://localhost:8081/repository/test-repo//test:test1
         docker login -u admin -p Sasi@@@@1 http://localhost:8081/repository/test-repo/
-        docker push http://localhost:8081/repository/test-repo//test:test
+        docker push http://localhost:8081/repository/test-repo//test:test1
