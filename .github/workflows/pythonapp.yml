@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
        docker build -f Dockerfile -t test:test1 .
-       docker login --username admin --password-stdin < ~/my_password http://localhost:8081/repository/test-repo/
+       echo "$Sasi@@@@1" | docker login --username foo --password-stdin http://localhost:8081/repository/test-repo/
        docker push http://27.5.163.155:8081/repository/test-repo/test1:test1
