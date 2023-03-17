@@ -19,5 +19,5 @@ jobs:
        sudo systemctl daemon-reload #THIS IS RESCUE COMMAND…
        sudo systemctl restart docker
        sudo systemctl status docker
-       docker login http://localhost:8081/
+       docker login http://localhost:8081/ -u admin -p Sasi@@@@1
        docker push http://127.0.0.1:8081/repository/test-repo/test1:test1
