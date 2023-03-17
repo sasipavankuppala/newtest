@@ -19,5 +19,5 @@ jobs:
        sudo systemctl daemon-reload #THIS IS RESCUE COMMAND…
        sudo systemctl restart docker
        sudo systemctl status docker
-       cat my_password.txt | docker login http://localhost:8081/repository/test1/ -u admin --password-stdin
-       docker push http://localhost:8081/repository/test-repo/test1:test1
+       cat my_password.txt | docker login http://127.0.0.1:8081/repository/test1/ -u admin --password-stdin
+       docker push http://127.0.0.1:8081/repository/test-repo/test1:test1
